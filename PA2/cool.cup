@@ -3,7 +3,6 @@
     * Parser definition for the COOL language.
     *
     */
-
     import java_cup.runtime.*;
     import java.util.Stack;
 
@@ -21,14 +20,12 @@
     AbstractSymbol curr_filename() {
     return ((CoolTokenLexer)parser.getScanner()).curr_filename();
     }
-
-
     String label = "";
     int count = 0;
 
 	boolean counterror(String et1) throws Exception
 	{
-  	                
+
 	if(count > 2){
           System.err.println("  et1: " + et1);
           parser.report_error(" 3 errori trovati ","WRONG", " --> " + ((CoolTokenLexer)parser.getScanner()).yytext()  ); 
@@ -54,8 +51,6 @@
 
 
     boolean dot = false;
-
-
     :}
 
     /************************************************************************/
@@ -391,7 +386,6 @@
     :}  
     ;
 
-    
     list_expr
     ::=
     list_expr:le COMMA expr:e
