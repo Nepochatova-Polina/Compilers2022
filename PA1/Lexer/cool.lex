@@ -22,8 +22,6 @@ import java_cup.runtime.Symbol;
     // Opened multiline comment parentheses counter
     int parenthesesCounter = 0;
     
-    // Compiler test
-    boolean fakeflag = false;
 
     private int curr_lineno = 1;
     int get_curr_lineno() {
@@ -219,15 +217,3 @@ import java_cup.runtime.Symbol;
 	\n|\r|\r\n				{ yybegin(YYINITIAL); }
 	.						{}
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
